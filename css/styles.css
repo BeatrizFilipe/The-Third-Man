@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:700');
+
+*{margin: 0;
+padding: 0;
+border: 0; }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+h1 {margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 90px;
+}
+
+h1:hover{color:red;
+    transition: margin-right 2s;
+}
+
+.man{max-width: 900px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+}
+
+.first {padding: 300px;
+    margin-left: 325px;
+    display: flex;
+}
+
+.second {margin-top: -378px;
+    margin-left: 725px;
+    border: 10px;
+}
+
+.third{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 100px;
+    margin-top: -90px;
+    margin-left: 805px;
+    display: block;
+    transform-style: preserve-3d;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 95px;
+    animation: anime 3s linear infinite;
+}
+
+.third:hover{color: red;}
+
+@keyframes anime {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+}
+
+.about{max-width: 900px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+}
+
+.question {font-family: 'Courier New', Courier, monospace;
+    color: red;
+    padding: 20px;
+    float: right;
+    position: absolut;
+}
+
+.subtitle { background: red;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    position: static;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: width 300ms linear;
+}
+
+.subtitle:hover{width: 40%;}
+
+.sinop{font-size: 20px;
+    font-family: courier;
+    position: absolute;
+    max-width: 900px;
+    padding-top: 35px;
+}
+
+#hidden{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.normal {border-radius: 6px;
+   /*background: #2db34a;*/
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    color: black;
+    align-items: center;
+}
+
+.normal:hover{position: relative;
+    background: black;
+    color: white;
+    align-items: center;
+}
+
+.normal:hover:after{content: url(../img/tres.jpg);
+   display: inline-flexbox;
+    position: absolute;
+}
+
+.hidden {padding-left: 20px;}
+
+.trailer {float: right;
+    padding-right: 350px;
+    padding-top: 150px;
+    float: right;
+    display: block;
+    width:60%;
+}
+
+video{-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+    float: right;
+}
